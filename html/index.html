@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <link rel="icon" href="https://www.pinterest.com/pin/17944098507394929/" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form onsubmit="formSubmission(); return false;" id="contactForm">
+      <label>Full Name:</label>
+      <input name="Name" placeholder="your fullname" required /><br /><br />
+      <label> ID:</label>
+      <input type="id" id="ID" placeholder="your id" required /><br /><br />
+      <label>Email:</label>
+      <input
+        type="email"
+        name="Email"
+        placeholder="abc@gmail.com"
+        required
+      /><br /><br />
+      <label>Choose your country</label>
+      <select name="country">
+        <option value="">Select your country</option>
+        <option value="nepal">Nepal</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <br />
+      <textarea rows="10" cols="50" name="msg"></textarea><br />
+      <button type="submit">Submit</button><br /><br />
+      <button type="reset">Reset</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
