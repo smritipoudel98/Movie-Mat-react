@@ -29,3 +29,12 @@ const fullname = (a) =>
     )
     .join(" ");
 console.log(fullname("smriTi poudel"));
+
+//write a js function to check if the phone number us nepal number or not
+
+const phoneNumber = (a) =>
+  a.length === 10 && a.match(/9[8|7]/gi) //gi=global insensitive(target to both upper and lower case)
+    ? console.log(` nepal's number`)
+    : console.log(`doesn't belong to nepal)`);
+const pp = phoneNumber("97924566766");
+console.log(pp);
