@@ -130,3 +130,7 @@ console.log(max(aa));
 let arr = [1, 2, 3, 4, 5, 6];
 let even = (arr) => arr.filter((item) => item % 2 == 0);
 console.log({ e: even(arr) });
+
+// const ce = ["1", "2", "3", "4", "5"];
+// const res = ce.slice(1, 4);
+// console.log(res);
