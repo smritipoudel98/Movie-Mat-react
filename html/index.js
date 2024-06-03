@@ -134,3 +134,15 @@ console.log({ e: even(arr) });
 // const ce = ["1", "2", "3", "4", "5"];
 // const res = ce.slice(1, 4);
 // console.log(res);
+
+//assignment:write the fibonacci series of nth elements
+let nth = parseInt(prompt("ENter a number: "));
+let a = 0;
+let b = 1;
+let rrsum;
+for (let i = 0; i < nth; i++) {
+  console.log(a);
+  rrsum = a + b;
+  a = b;
+  b = rrsum;
+}
