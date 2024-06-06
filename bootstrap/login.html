@@ -11,9 +11,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="/css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
   </head>
-  <body style="background-color: darkgray">
+  <body style="background-color: rgb(162, 150, 150)">
     <div class="flex d-flex justify-content-center align-items-center vh-100">
       <div class="card" style="width: 450px">
         <div class="card-body">
@@ -29,6 +37,7 @@
             <form>
               <div class="mb-3">
                 <label for="email" class="form-label">Email address: </label>
+                <i class="fa fa-envelope" style="font-size: 24px"></i>
                 <input
                   type="email"
                   id="email"
@@ -40,6 +49,7 @@
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label">Password: </label>
+                <i class="fa fa-lock" style="font-size: 30px"></i>
                 <input
                   type="password"
                   id="password"
@@ -48,33 +58,30 @@
                   placeholder="Enter Password"
                   required
                 />
-              </div>
-              <div class="form-check mb-3">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label
-                  class="form-check-label"
-                  for="exampleCheck1"
-                  style="text-align: 30"
-                  >Forget password</label
+
+                <a
+                  id="emailHelp"
+                  class="flex d-flex flex-row-reverse"
+                  style="text-decoration: none; cursor: pointer"
                 >
+                  Forget Password?
+                </a>
               </div>
+              <br />
               <button
                 type="submit"
-                class="btn btn-primary"
+                class="btn btn-primary flex d-flex flex-row-reverse"
                 style="background-color: rgb(76, 39, 111)"
               >
                 Submit</button
               ><br /><br />
+              <hr />
               <button
-                type="register"
+                type="button"
                 class="btn btn-primary"
                 style="background-color: rgb(76, 39, 111)"
               >
-                Register
+                Register?
               </button>
             </form>
           </div>
